@@ -9,7 +9,7 @@ int binarySearch(int A[],int low, int high)
   while(low<=high)
   {
     mid=low+(high-low)/2;
-    if(key==mid)
+    if(key==A[mid])
     {
       return mid;
     }
