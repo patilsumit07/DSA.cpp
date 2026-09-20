@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 
-// ================= CROP STRUCTURE =================
+// ================== CROP STRUCTURE ==================
 
 struct Crop
 {
@@ -17,7 +17,7 @@ struct Crop
 Crop *head = NULL;
 
 
-// ================= STACK =================
+// ================== STACK ==================
 
 string operations[50];
 int top = -1;
