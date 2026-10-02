@@ -34,7 +34,6 @@ char peekOp()
     return opStack[top];
 }
 
-/* a) Infix to Postfix */
 void infixToPostfix(char infix[], char postfix[])
 {
     int i, k = 0;
@@ -47,7 +46,6 @@ void infixToPostfix(char infix[], char postfix[])
         if (isspace(c))
             continue;
 
-        /* Operand: variable or number */
         if (isalnum(c))
         {
             postfix[k++] = c;
@@ -62,7 +60,7 @@ void infixToPostfix(char infix[], char postfix[])
                 postfix[k++] = popOp();
 
             if (top != -1)
-                popOp();   // Remove '('
+                popOp();   
         }
         else
         {
@@ -83,7 +81,6 @@ void infixToPostfix(char infix[], char postfix[])
     postfix[k] = '\0';
 }
 
-/* b) Evaluate Postfix */
 int evaluatePostfix(char postfix[], int values[])
 {
     int stack[MAX];
@@ -102,10 +99,7 @@ int evaluatePostfix(char postfix[], int values[])
         }
         else if (isalpha(c))
         {
-            /*
-             * A=0, B=1, C=2, ...
-             * values[] contains marks for variables.
-             */
+            
             stack[++top] = values[toupper(c) - 'A'];
         }
         else
