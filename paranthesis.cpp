@@ -10,13 +10,11 @@ bool checkParenthesis(string exp)
     {
         char ch = exp[i];
 
-        // Opening brackets
         if (ch == '(' || ch == '{' || ch == '[')
         {
             s.push(ch);
         }
 
-        // Closing brackets
         else if (ch == ')' || ch == '}' || ch == ']')
         {
             if (s.empty())
