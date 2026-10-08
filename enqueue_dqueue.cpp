@@ -3,7 +3,7 @@ using namespace std;
 class Queue
 {
   public:
-    int A[6];
+    int A[7];
     int front;
     int rear;
     Queue()
@@ -13,7 +13,7 @@ class Queue
     }
     void enQueue(int value)
     {
-      if(rear==5)
+      if(rear==6)
       {
         cout<<"Queue is overflow";
       }
