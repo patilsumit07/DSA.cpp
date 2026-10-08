@@ -75,7 +75,7 @@ int main()
 
     do 
     {
-        cout << "\n******* Admission Queue *******" << endl;
+        cout << "\n****** Admission Queue ******" << endl;
         cout << "1. Enqueue student token number" << endl;
         cout << "2. Dequeue and display student" << endl;
         cout << "3. Display front and rear token number" << endl;
