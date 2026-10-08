@@ -319,7 +319,7 @@ int main()
             break;
 
         case 9:
-            cout << "\nThank you!";
+            cout << "\nThank for visit you!";
             break;
 
         default:
